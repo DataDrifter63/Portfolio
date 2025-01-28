@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding-top: 60px;
+            background-image: url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+        }
+
+        nav .navbar-brand {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: #ff6f61;
+        }
+
+        .hamburger {
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .side-navbar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            height: 100%;
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 0.3s;
+            z-index: 1000;
+        }
+
+        .side-navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+            padding: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .side-navbar a:hover {
+            background-color: #3498db;
+        }
+
+        .section-contact {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .contact-info .list-group-item {
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info .list-group-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(10px);
+        }
+
+        .contact-info .list-group-item a {
+            color: #ff6f61;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info .list-group-item a:hover {
+            color: #ff4b36;
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff6f61;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-item {
+            opacity: 0;
+            animation: fadeInUp 0.6s forwards;
+        }
+
+        .animate-item:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .animate-item:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .animate-item:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .animate-item:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mySidenav" class="side-navbar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <span class="hamburger" onclick="toggleNav()">&#9776;</span>
+        </div>
+    </nav>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2 class="section-header text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <ul class="list-group">
+                            <li class="list-group-item animate-item">
+                                <strong>Email:</strong> <a href="mailto:areebshiekh.1503b@gmail.com">areebshiekh.1503b@gmail.com</a>
+                            </li>
+                            <li class="list-group-item animate-item">
+                                <strong>Phone:</strong> <a href="tel:+923174721151">03174721151</a>
+                            </li>
+                            <li class="list-group-item animate-item">
+                                <strong>GitHub:</strong> <a href="https://github.com/DataDrifter63" target="_blank">Visit My GitHub</a>
+                            </li>
+                            <li class="list-group-item animate-item">
+                                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shah-mir-amir-09a038348/" target="_blank">Visit My LinkedIn</a>
+                            </li>
+                        </ul>
+                        <div class="social-icons text-center mt-4">
+                            <a href="https://github.com/DataDrifter63" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/shah-mir-amir-09a038348/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:areebshiekh.1503b@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleNav() {
+            const sidenav = document.getElementById("mySidenav");
+            sidenav.style.left = sidenav.style.left === "0px" ? "-250px" : "0";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-250px";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
